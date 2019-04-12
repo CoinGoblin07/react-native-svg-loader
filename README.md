@@ -68,8 +68,8 @@ module.exports = ({ width, height, fill, stroke }) => (
       }
     };
   })();
-```
-
+  ```
+  
 * Import svgs and use them in your code!
 
 ```jsx
