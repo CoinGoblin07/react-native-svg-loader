@@ -69,7 +69,7 @@ npm install --save-dev rn-svg-loader
 yarn add -D rn-svg-loader
 ```
 
-* Configure the react native packager
+### Configure the react native packager
 For React Native v0.57 or newer / Expo SDK v31.0.0 or newer
 
 `metro.config.js:`
