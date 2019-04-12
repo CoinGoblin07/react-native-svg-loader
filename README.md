@@ -69,7 +69,9 @@ module.exports = ({ width, height, fill, stroke }) => (
     };
   })();
 ```
+
 * Import svgs and use them in your code!
+
 ```jsx
 import React, { Component } from 'react';
 import { View, Text } from 'react-native';
