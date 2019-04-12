@@ -46,22 +46,25 @@ module.exports = ({ width, height, fill, stroke }) => (
   # or yarn
   yarn add -D react-native-svg-loader
   ```
-* Add loader to your `webpack-config`
+* For React Native v0.57 or newer / Expo SDK v31.0.0 or newer
   ```js
-  ...
-   module: {
-      rules: [
-        {
-            test: /\.svg$/,
-            use: [
-              {
-                loader: 'react-native-svg-loader',
-              },
-            ]
-        }
-      ]
-   }
-  ```
+const { getDefaultConfig } = require("metro-config");
+
+module.exports = (async () => {
+  const {
+    resolver: { sourceExts, assetExts }
+  } = await getDefaultConfig();
+  return {
+    transformer: {
+      babelTransformerPath: require.resolve("rn-svg-loader")
+    },
+    resolver: {
+      assetExts: assetExts.filter(ext => ext !== "svg"),
+      sourceExts: [...sourceExts, "svg"]
+    }
+  };
+})();
+```
 * Import svgs and use them in your code!
 ```jsx
 import React, { Component } from 'react';
