@@ -40,7 +40,7 @@ module.exports = ({ width, height, fill, stroke }) => (
 ```
 
 ## Usage
-* Import svgs and use them in your code!
+### Import svgs and use them in your code!
 
 ```jsx
 import React, { Component } from 'react';
@@ -62,7 +62,7 @@ export default class App extends Component {
 ```
 
 ## Installation and configuration
-* Install rn-svg-loader
+### Install rn-svg-loader library
 ```bash
 npm install --save-dev rn-svg-loader
 # or yarn
