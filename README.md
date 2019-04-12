@@ -46,6 +46,7 @@ module.exports = ({ width, height, fill, stroke }) => (
   # or yarn
   yarn add -D rn-svg-loader
   ```
+  
 * For React Native v0.57 or newer / Expo SDK v31.0.0 or newer
 
   `metro.config.js:`
