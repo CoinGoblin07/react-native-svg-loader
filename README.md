@@ -40,14 +40,37 @@ module.exports = ({ width, height, fill, stroke }) => (
 ```
 
 ## Usage
-* Install
+* Import svgs and use them in your code!
+
+```jsx
+import React, { Component } from 'react';
+import { View, Text } from 'react-native';
+import MyLogo from './my-logo.svg';
+
+export default class App extends Component {
+  render() {
+    return (
+      <View>
+        <Text>
+          Welcome to my React Native app!
+        </Text>
+        <MyLogo width={40} height={40} />
+      </View>
+    );
+  }
+}
+```
+
+## Installation and configuration
+* Install rn-svg-loader
 ```bash
 npm install --save-dev rn-svg-loader
 # or yarn
 yarn add -D rn-svg-loader
 ```
-  
-* For React Native v0.57 or newer / Expo SDK v31.0.0 or newer
+
+* Configure the react native packager
+For React Native v0.57 or newer / Expo SDK v31.0.0 or newer
 
 `metro.config.js:`
   
@@ -68,27 +91,6 @@ module.exports = (async () => {
     }
   };
 })();
-```
-  
-* Import svgs and use them in your code!
-
-```jsx
-import React, { Component } from 'react';
-import { View, Text } from 'react-native';
-import MyLogo from './my-logo.svg';
-
-export default class App extends Component {
-  render() {
-    return (
-      <View>
-        <Text>
-          Welcome to my React Native app!
-        </Text>
-        <MyLogo width={40} height={40} />
-      </View>
-    );
-  }
-}
 ```
 
 ## Props 
