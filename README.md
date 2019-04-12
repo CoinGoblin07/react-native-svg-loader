@@ -1,5 +1,5 @@
-# react-native-svg-loader
-[![npm version](https://badge.fury.io/js/react-native-svg-loader.svg)](https://badge.fury.io/js/react-native-svg-loader)[![Build Status](https://travis-ci.org/unimonkiez/react-native-svg-loader.svg?branch=master)](https://travis-ci.org/unimonkiez/react-native-svg-loader)
+# rn-svg-loader
+[![npm version](https://badge.fury.io/js/rn-svg-loader.svg)](https://badge.fury.io/js/rn-svg-loader)[![Build Status](https://travis-ci.org/unimonkiez/rn-svg-loader.svg?branch=master)](https://travis-ci.org/unimonkiez/rn-svg-loader)
 
 ## Parse your svgs in build time and make them compatible with your react-native app.
 
@@ -42,12 +42,14 @@ module.exports = ({ width, height, fill, stroke }) => (
 ## Usage
 * Install
   ```bash
-  npm install --save-dev react-native-svg-loader
+  npm install --save-dev rn-svg-loader
   # or yarn
-  yarn add -D react-native-svg-loader
+  yarn add -D rn-svg-loader
   ```
 * For React Native v0.57 or newer / Expo SDK v31.0.0 or newer
+
   `metro.config.js:`
+  
   ```js
   const { getDefaultConfig } = require("metro-config");
 
